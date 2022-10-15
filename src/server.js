@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const { default: mongoose } = require("mongoose");
 
 const Vehicle = require("./model/vehicle.model");
