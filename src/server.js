@@ -32,7 +32,7 @@ app.post("/checkBooking", async (req, res) => {
     const { date } = req.body;
     const vehicle = await Vehicle.findOne({});
     const isBookAvailabel = vehicle.bookingDate.find((ele) => {
-      return (ele = date);
+      return (ele == date);
     });
     if (!isBookAvailabel) {
       return res
