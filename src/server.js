@@ -6,7 +6,7 @@ const Vehicle = require("./model/vehicle.model");
 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const dbUrl =
   "mongodb+srv://chatBotShahab:open123456@cluster0.t6qrhkx.mongodb.net/test";
