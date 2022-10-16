@@ -1,0 +1,171 @@
+2022-08-04 14:31:34 INFO     numexpr.utils  - NumExpr defaulting to 2 threads.
+2022-08-04 14:31:35 INFO     root  - Starting Rasa server on http://0.0.0.0:5005
+2022-08-04 14:31:36 INFO     rasa.core.processor  - Loading model models/nlu-20220803-121039-kind-shotgun.tar.gz...
+2022-08-04 14:31:47 INFO     root  - Rasa server is up and running.
+2022-08-10 08:34:23 INFO     numexpr.utils  - NumExpr defaulting to 2 threads.
+2022-08-10 08:34:24 INFO     root  - Starting Rasa server on http://0.0.0.0:5005
+2022-08-10 08:34:25 INFO     rasa.core.processor  - Loading model models/nlu-20220808-193904-narrow-shoot.tar.gz...
+2022-08-10 08:35:04 INFO     root  - Rasa server is up and running.
+2022-08-11 11:34:01 ERROR    rasa.server  - An unexpected error occurred. Error: Failed when parsing body as json
+2022-08-11 11:34:52 ERROR    rasa.server  - An unexpected error occurred. Error: Failed when parsing body as json
+/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic_cors/extension.py:39: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  SANIC_VERSION = LooseVersion(sanic_version)
+/home/ubuntu/anaconda3/lib/python3.9/site-packages/numexpr/expressions.py:21: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  _np_version_forbids_neg_powint = LooseVersion(numpy.__version__) >= LooseVersion('1.12.0b1')
+2022-08-12 09:54:39 INFO     numexpr.utils  - NumExpr defaulting to 2 threads.
+/home/ubuntu/anaconda3/lib/python3.9/site-packages/matplotlib/__init__.py:169: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  if LooseVersion(module.__version__) < minver:
+/home/ubuntu/anaconda3/lib/python3.9/site-packages/setuptools/_distutils/version.py:346: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  other = LooseVersion(other)
+2022-08-12 09:54:40 INFO     root  - Starting Rasa server on http://0.0.0.0:5005
+/home/ubuntu/anaconda3/lib/python3.9/site-packages/tensorflow_addons/utils/ensure_tf_install.py:47: DeprecationWarning: distutils Version classes are deprecated. Use packaging.version instead.
+  min_version = LooseVersion(INCLUSIVE_MIN_TF_VERSION)
+2022-08-12 09:54:41 INFO     rasa.core.processor  - Loading model models/nlu-20220812-095023-approximate-bed.tar.gz...
+2022-08-12 09:54:41 INFO     rasa.nlu.utils.spacy_utils  - Trying to load SpaCy model with name 'en_core_web_sm'.
+2022-08-12 09:54:42 INFO     rasa.nlu.utils.spacy_utils  - Trying to load SpaCy model with name 'en_core_web_sm'.
+[93m/home/ubuntu/anaconda3/lib/python3.9/site-packages/rasa/utils/train_utils.py:528: UserWarning: constrain_similarities is set to `False`. It is recommended to set it to `True` when using cross-entropy loss.
+  rasa.shared.utils.io.raise_warning(
+[0m[93m/home/ubuntu/anaconda3/lib/python3.9/site-packages/rasa/shared/utils/io.py:98: UserWarning: 'evaluate_every_number_of_epochs=20' is greater than 'epochs=1'. No evaluation will occur.
+[0m2022-08-12 09:55:21 INFO     root  - Rasa server is up and running.
+[2022-08-18 05:32:37 +0000] [58739] [ERROR] protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 142, in http1
+    await self.http1_request_header()
+  File "http1_request_header", line 65, in http1_request_header
+    :raises RuntimeError:
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/request.py", line 127, in __init__
+    self._parsed_url = parse_url(url_bytes)
+  File "httptools/parser/url_parser.pyx", line 105, in httptools.parser.url_parser.parse_url
+httptools.parser.errors.HttpParserInvalidURLError: invalid url b'api.ipify.org:443'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "connection_task", line 15, in connection_task
+    from sanic.http import Http, Stage
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 168, in http1
+    await self.error_response(e)
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 437, in error_response
+    self.create_empty_request()
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 449, in create_empty_request
+    self.request = self.protocol.request_class(
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/request.py", line 127, in __init__
+    self._parsed_url = parse_url(url_bytes)
+  File "httptools/parser/url_parser.pyx", line 105, in httptools.parser.url_parser.parse_url
+httptools.parser.errors.HttpParserInvalidURLError: invalid url b'api.ipify.org:443'
+[2022-08-18 06:08:20 +0000] [58739] [ERROR] protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 142, in http1
+    await self.http1_request_header()
+  File "http1_request_header", line 65, in http1_request_header
+    :raises RuntimeError:
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/request.py", line 127, in __init__
+    self._parsed_url = parse_url(url_bytes)
+  File "httptools/parser/url_parser.pyx", line 105, in httptools.parser.url_parser.parse_url
+httptools.parser.errors.HttpParserInvalidURLError: invalid url b'api.ipify.org:443'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "connection_task", line 15, in connection_task
+    from sanic.http import Http, Stage
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 168, in http1
+    await self.error_response(e)
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 437, in error_response
+    self.create_empty_request()
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 449, in create_empty_request
+    self.request = self.protocol.request_class(
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/request.py", line 127, in __init__
+    self._parsed_url = parse_url(url_bytes)
+  File "httptools/parser/url_parser.pyx", line 105, in httptools.parser.url_parser.parse_url
+httptools.parser.errors.HttpParserInvalidURLError: invalid url b'api.ipify.org:443'
+[2022-08-23 13:42:00 +0000] [58739] [ERROR] protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "http1_request_header", line 41, in http1_request_header
+    HANDLER = 3  # Headers done, handler running
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 142, in http1
+    await self.http1_request_header()
+  File "http1_request_header", line 57, in http1_request_header
+    :raises HeaderExpectationFailed:
+sanic.exceptions.InvalidUsage: Bad Request
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "connection_task", line 15, in connection_task
+    from sanic.http import Http, Stage
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 168, in http1
+    await self.error_response(e)
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 437, in error_response
+    self.create_empty_request()
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 449, in create_empty_request
+    self.request = self.protocol.request_class(
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/request.py", line 127, in __init__
+    self._parsed_url = parse_url(url_bytes)
+  File "httptools/parser/url_parser.pyx", line 105, in httptools.parser.url_parser.parse_url
+httptools.parser.errors.HttpParserInvalidURLError: invalid url b'sip:nm'
+[2022-08-23 14:21:30 +0000] [58739] [ERROR] protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "http1_request_header", line 41, in http1_request_header
+    HANDLER = 3  # Headers done, handler running
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 142, in http1
+    await self.http1_request_header()
+  File "http1_request_header", line 57, in http1_request_header
+    :raises HeaderExpectationFailed:
+sanic.exceptions.InvalidUsage: Bad Request
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "connection_task", line 15, in connection_task
+    from sanic.http import Http, Stage
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 168, in http1
+    await self.error_response(e)
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 437, in error_response
+    self.create_empty_request()
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 449, in create_empty_request
+    self.request = self.protocol.request_class(
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/request.py", line 127, in __init__
+    self._parsed_url = parse_url(url_bytes)
+  File "httptools/parser/url_parser.pyx", line 105, in httptools.parser.url_parser.parse_url
+httptools.parser.errors.HttpParserInvalidURLError: invalid url b'sip:nm'
+[2022-08-28 19:20:16 +0000] [58739] [ERROR] protocol.connection_task uncaught
+Traceback (most recent call last):
+  File "http1_request_header", line 41, in http1_request_header
+    HANDLER = 3  # Headers done, handler running
+Exception
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 142, in http1
+    await self.http1_request_header()
+  File "http1_request_header", line 57, in http1_request_header
+    :raises HeaderExpectationFailed:
+sanic.exceptions.InvalidUsage: Bad Request
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "connection_task", line 15, in connection_task
+    from sanic.http import Http, Stage
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 168, in http1
+    await self.error_response(e)
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 437, in error_response
+    self.create_empty_request()
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/http.py", line 449, in create_empty_request
+    self.request = self.protocol.request_class(
+  File "/home/ubuntu/anaconda3/lib/python3.9/site-packages/sanic/request.py", line 127, in __init__
+    self._parsed_url = parse_url(url_bytes)
+  File "httptools/parser/url_parser.pyx", line 105, in httptools.parser.url_parser.parse_url
+httptools.parser.errors.HttpParserInvalidURLError: invalid url b'sip:nm'

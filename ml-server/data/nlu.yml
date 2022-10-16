@@ -1,0 +1,19 @@
+version: "3.1"
+
+
+
+nlu:
+- intent: availability
+  examples: |
+    - is it available
+
+
+- intent: price
+  examples: |
+    - what is the price
+
+
+- intent: book
+  examples: |
+    - Bookprice
+

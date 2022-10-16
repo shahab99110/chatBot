@@ -1,0 +1,1 @@
+{"text": {"is": 2, "it": 3, "available": 0, "what": 6, "the": 5, "price": 4, "bookprice": 1}, "intent": {"availability": 0, "price": 2, "book": 1}, "response": null, "action_name": null, "action_text": null, "intent_response_key": null}
