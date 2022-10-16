@@ -1,5 +1,6 @@
 const express = require("express");
 require("dotenv").config();
+const cors = require("cors")
 const { default: mongoose } = require("mongoose");
 
 const Vehicle = require("./model/vehicle.model");
