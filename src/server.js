@@ -7,7 +7,7 @@ const Vehicle = require("./model/vehicle.model");
 
 const app = express();
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 const dbUrl =
   "mongodb+srv://chatBotShahab:open123456@cluster0.t6qrhkx.mongodb.net/test";
@@ -40,11 +40,11 @@ app.post("/checkBooking", async (req, res) => {
     if (isBookAvailabel[0] == true) {
       return res
         .status(200)
-        .json({ status: true, message: "vehicle is availabel" });
+        .json({ status: true, message: "vehicle is available" });
     } else {
       return res
         .status(200)
-        .json({ status: false, message: "vehicle is not availabel" });
+        .json({ status: false, message: "vehicle is not available" });
     }
   } catch (error) {
     console.error(error);
