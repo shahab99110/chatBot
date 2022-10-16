@@ -4,7 +4,7 @@ const { Schema } = mongoose;
 const vehicleSchema = new Schema({
   name: { type: String },
   image: { type: String },
-  bookingDate: { type: Array },
+  bookingDate: [Object],
 });
 
 const Vehicle = mongoose.model("Vehicle", vehicleSchema);

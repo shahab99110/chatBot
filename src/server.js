@@ -29,12 +29,13 @@ app.get("/", (req, res) => {
 });
 app.post("/checkBooking", async (req, res) => {
   try {
-    const { date } = req.body;
+    const { from, to } = req.body;
     const vehicle = await Vehicle.findOne({});
-    const isBookAvailabel = vehicle.bookingDate.find((ele) => {
-      return (ele == date);
-    });
-    if (!isBookAvailabel) {
+    const isBookAvailabel = vehicle.bookingDate.map(
+      (obj) =>
+        (obj.from > from || obj.to < from) && (obj.from > to || obj.to < to)
+    );
+    if (isBookAvailabel[0] == true) {
       return res
         .status(200)
         .json({ status: true, message: "vehicle is availabel" });
@@ -55,11 +56,23 @@ app.post("/book", async (req, res) => {
   try {
     const { date } = req.body;
     const vehicle = await Vehicle.findOne({});
+    const isBookAvailabel = vehicle.bookingDate.map(
+      (obj) =>
+        (obj.from > date.from || obj.to < date.from) &&
+        (obj.from > date.to || obj.to < date.to)
+    );
+    if (isBookAvailabel[0] == false) {
+      return res.status(400).json({
+        status: false,
+        message:
+          "you have choose unavailble dates, please first check availibility and then book",
+      });
+    }
     vehicle.bookingDate.push(date);
     const resp = await vehicle.save();
     return res.status(200).json({
       status: true,
-      message: `your booking is successfully done with vehicle name ${vehicle.name} on ${date} with booking No is ${vehicle._id}`,
+      message: `your booking is successfully done with vehicle name ${vehicle.name} from ${date.from} to ${date.to}`,
     });
   } catch (error) {
     console.error(error);
